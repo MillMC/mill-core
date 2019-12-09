@@ -1,0 +1,31 @@
+modbuild = "0.1"
+[mod]
+    slug = 'yet-another-gravestone-mod'
+    author = 'Nuclearfarts'
+    version = '1.0.0'
+    # possible loaders: 'fabric', 'forge', 'other'
+    # fabric is fully supported
+    # forge has binary support
+    # other only supports binary download, and will copy anything downloaded into the mods folder (unsupported)
+    modloader = 'fabric'
+    # ignored by the main impl, used for other managers
+    # recommended handling: accept on same version, ask for confirmation otherwise
+    gameVersion = "1.15"
+    # possible values: 'source', 'binary', 'meta'
+    # source: a source package that is always the same every time it is pulled until the modbuild.toml is updated
+    # binary: a pre-built JAR file
+    # meta: only has dependencies (unsuppored)
+    type = 'binary'
+    # The URL of the mod source/binary. Prefer tar.gz for source, then zip.
+    downloadUrl = "https://github.com/Nuclearfarts/yet-another-gravestone-mod/releases/download/v1.0.0/yet-another-gravestone-mod-1.0.0.jar"
+    # A sha-256 hash of the archive
+    downloadHash = "136a1f69e909d636a515cb972522b95e580ee17ab3f33f6cf495cba8d68d0711"
+# unimplemented
+[[dependencies]]
+    slug = 'example-fabric-dependency'
+    # follows Apache Maven Project Version Range Specification
+    # modpacks should use
+    versionRange = ','
+[[dependencies]]
+    slug = 'tesseract'
+    versionRange = ','
