@@ -1,1 +1,1 @@
-$ mineaur-core
+# mineaur-core
