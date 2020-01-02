@@ -2,7 +2,8 @@ package io.glitchieproductions.mineaur.api.pkgs;
 
 import io.glitchieproductions.mineaur.api.ModLoader;
 import io.glitchieproductions.mineaur.impl.MineAurImpl;
-import org.slf4j.Logger;
+
+import com.patchworkmc.logging.Logger;
 
 public interface Package {
     String getSlug();

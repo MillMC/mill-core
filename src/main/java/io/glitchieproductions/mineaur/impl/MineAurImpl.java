@@ -12,17 +12,15 @@ import io.glitchieproductions.mineaur.impl.pkgs.PackageImpl;
 import io.glitchieproductions.mineaur.impl.pkgs.DownloadedGradlePackageImpl;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
+import com.patchworkmc.logging.Logger;
 
 // not final so that others can add features etc. while not reinventing the wheel
 public class MineAurImpl implements MineAur {
-    public static final Logger LOGGER = LoggerFactory.getLogger("MineAUR");
+    public static final Logger LOGGER = new Logger("MineAUR");
 
     /**
      * Internal use only!

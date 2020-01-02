@@ -11,23 +11,23 @@ sourceCompatibility = 1.8
 repositories {
     mavenCentral()
     maven {
-        name = 'Fabric'
-        url = 'https://maven.fabricmc.net/'
-    }
+		url 'https://dl.bintray.com/patchworkmc/Patchwork-Maven'
+	}
 }
 
 dependencies {
-    //for parsing modbuild files
+    // for parsing modbuild files
     implementation 'com.electronwill.night-config:toml:3.6.2'
-    //logging
-    implementation 'org.slf4j:slf4j-simple:2.0.0-alpha1'
-    implementation 'org.slf4j:slf4j-api:2.0.0-alpha1'
-    //used for the install process
+    // I work on Patchwork, so I'm going to use this as a core
+	implementation 'com.patchworkmc:application-core:0.1.0'
+    // used for the install process
     implementation 'commons-io:commons-io:2.6'
-    //used for unpacking in the download process
+    // used for unpacking in the download process
     implementation 'org.rauschig:jarchivelib:1.0.0'
-    //used to aide in verification debugging during the download process
+    // used to aide in verification debugging during the download process
     implementation 'commons-codec:commons-codec:1.13'
+	// @Nullable etc
+	implementation 'com.google.code.findbugs:jsr305:3.0.2'
 }
 
 application {
