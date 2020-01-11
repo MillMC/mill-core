@@ -1,4 +1,4 @@
-package io.glitchieproductions.mineaur.api.pkgs;
+package io.github.millmc.core.api.pkgs;
 
 import java.io.File;
 

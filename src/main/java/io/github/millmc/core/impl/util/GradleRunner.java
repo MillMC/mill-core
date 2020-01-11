@@ -1,4 +1,4 @@
-package io.glitchieproductions.mineaur.impl.util;
+package io.github.millmc.core.impl.util;
 
 
 

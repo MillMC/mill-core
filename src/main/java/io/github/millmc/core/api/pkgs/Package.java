@@ -1,7 +1,7 @@
-package io.glitchieproductions.mineaur.api.pkgs;
+package io.github.millmc.core.api.pkgs;
 
-import io.glitchieproductions.mineaur.api.ModLoader;
-import io.glitchieproductions.mineaur.impl.MineAurImpl;
+import io.github.millmc.core.api.ModLoader;
+import io.github.millmc.core.impl.MillImpl;
 
 import com.patchworkmc.logging.Logger;
 
@@ -11,6 +11,6 @@ public interface Package {
     //getAuthor
     //getGameVersion
     default Logger getLogger() {
-        return MineAurImpl.LOGGER;
+        return MillImpl.LOGGER;
     }
 }

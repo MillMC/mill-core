@@ -1,4 +1,4 @@
-package io.glitchieproductions.mineaur.api;
+package io.github.millmc.core.api;
 
 // Rift will never be officially supported due to :voldethonk:
 public enum ModLoader {

@@ -1,14 +1,14 @@
-package io.glitchieproductions.mineaur.impl.pkgs;
+package io.github.millmc.core.impl.pkgs;
 
-import io.glitchieproductions.mineaur.api.ModLoader;
-import io.glitchieproductions.mineaur.api.pkgs.Package;
-import io.glitchieproductions.mineaur.impl.MineAurImpl;
+import io.github.millmc.core.api.ModLoader;
+import io.github.millmc.core.api.pkgs.Package;
+import io.github.millmc.core.impl.MillImpl;
 
 public class PackageImpl implements Package {
-    protected MineAurImpl mineAur;
+    protected MillImpl mineAur;
     private String slug;
     private ModLoader loader;
-    public PackageImpl(MineAurImpl mineAur, String slug, ModLoader loader)  {
+    public PackageImpl(MillImpl mineAur, String slug, ModLoader loader)  {
         this.mineAur = mineAur;
         this.slug = slug;
         this.loader = loader;

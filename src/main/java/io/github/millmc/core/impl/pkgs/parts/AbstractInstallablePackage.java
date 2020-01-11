@@ -1,14 +1,14 @@
-package io.glitchieproductions.mineaur.impl.pkgs.parts;
+package io.github.millmc.core.impl.pkgs.parts;
 
-import io.glitchieproductions.mineaur.api.ModLoader;
-import io.glitchieproductions.mineaur.api.pkgs.InstallablePackage;
-import io.glitchieproductions.mineaur.impl.MineAurImpl;
-import io.glitchieproductions.mineaur.impl.pkgs.PackageImpl;
+import io.github.millmc.core.api.ModLoader;
+import io.github.millmc.core.api.pkgs.InstallablePackage;
+import io.github.millmc.core.impl.MillImpl;
+import io.github.millmc.core.impl.pkgs.PackageImpl;
 
 public abstract class AbstractInstallablePackage extends PackageImpl implements InstallablePackage {
     private String downloadUrl;
     private byte[] expectedChecksum;
-    public AbstractInstallablePackage(MineAurImpl mineAur, String slug, ModLoader loader, String downloadUrl, byte[] expectedChecksum) {
+    public AbstractInstallablePackage(MillImpl mineAur, String slug, ModLoader loader, String downloadUrl, byte[] expectedChecksum) {
         super(mineAur, slug, loader);
         this.downloadUrl = downloadUrl;
         this.expectedChecksum = expectedChecksum;

@@ -1,6 +1,6 @@
-package io.glitchieproductions.mineaur.impl.pkgs.parts;
+package io.github.millmc.core.impl.pkgs.parts;
 
-import io.glitchieproductions.mineaur.api.pkgs.InstallablePackage;
+import io.github.millmc.core.api.pkgs.InstallablePackage;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.DirectoryFileFilter;
@@ -12,7 +12,6 @@ import java.io.IOError;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;

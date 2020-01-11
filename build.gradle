@@ -3,7 +3,7 @@ plugins {
     id 'application'
 }
 
-group 'io.github.glitchieproductions'
+group 'io.github.millmc'
 version '0.1.0'
 
 sourceCompatibility = 1.8
@@ -31,5 +31,5 @@ dependencies {
 }
 
 application {
-    mainClassName = 'io.glitchieproductions.mineaur.impl.MineAurImpl'
+    mainClassName = 'io.github.millmc.core.impl.MineAurImpl'
 }
